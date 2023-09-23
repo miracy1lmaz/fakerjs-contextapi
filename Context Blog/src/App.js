@@ -85,7 +85,7 @@ function Header() {
       <div>
         <Results  />
         <SearchPosts  />
-        <button onClick={onClearPosts}>Clear posts</button>
+        <button onClick={onClearPosts}>Clear Posts</button>
       </div>
     </header>
   );
@@ -104,7 +104,7 @@ function SearchPosts() {
 
 function Results() {
   const {posts} = useContext(PostContext)
-  return <p>🚀 {posts.length} context posts found</p>;
+  return <p>🚀 {posts.length} Context Posts Found</p>;
 }
 
 function Main() {
@@ -191,7 +191,8 @@ function Archive() {
               <p>
                 <strong>{post.title}:</strong> {post.body}
               </p>
-              <button onClick={() => onAddPost(post)}>Add as new post</button>
+              <button onClick={() => onAddPost(post)}>Add a
+                  new post</button>
             </li>
           ))}
         </ul>
@@ -201,7 +202,7 @@ function Archive() {
 }
 
 function Footer() {
-  return <footer>&copy; 2023 by The Context Blog </footer>;
+  return <footer>&copy; 2024 by The Context Blog </footer>;
 }
 
 export default App;
